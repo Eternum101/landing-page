@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero {
+    background-color: #1F2937;
+}
+
+.hero h2 {
+    color: #F9FAF8;
+    font-size: 48px;
+    font-weight: bolder; 
+}
+
+.hero a {
+    font-size: 18px;
+    color: #E5E7EB;
+    text-decoration: none;
+}
+
+.hero button {
+    background-color: #3882F6;
+    color: white;
+}
