@@ -29,6 +29,59 @@ body {
     display: inline;
 }
 
+.container-hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 700px    ;
+}
+
+.hero-flex {
+    display: flex;
+    padding: 35px;
+    color: white;
+    justify-content: center;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-header {
+    font-size: 48px;
+    font-weight: bolder;
+    color: #F9FAF8;
+    line-height: 50px;
+    width: 500px;
+}
+
+.hero-subtext {
+    font-size: 18px;
+    color: #E5E7EB;
+    width: 450px  ;
+}
+
+.hero-button {   
+    display: flex;
+    padding-top: 10px;
+}
+
+.hero-sign-up {
+    color: white;
+    font-weight: bold;
+    background-color: #3882F6;
+    border-radius: 5px;
+    padding: 6px 30px;
+}
+
+.hero-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .container-info {
     display: flex;
     justify-content: center;
