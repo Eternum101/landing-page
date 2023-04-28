@@ -1,16 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Lato', sans-serif;
 }
 
+/* Header and Navbar */
 .container {
     max-width: 100%;
     margin: 0 auto;
 }
 
 .main-header {
-    background-color: #1F2937;
+    background-color: #4D020E;
     color: white;
 }
 
@@ -27,13 +30,47 @@ body {
 
 .main-nav li {
     display: inline;
+    font-size: 18px;
+    font-weight: bold;
 }
 
+.main-nav a {
+    display: inline-block;
+    padding: .5em 1.5em;
+    color: white;
+    text-decoration: none;
+    position: relative;
+}
+
+.main-nav a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.main-nav a::after {
+    transform: scaleX(0);
+}
+
+.main-nav a:hover::after {
+    transform: scaleX(1);
+}
+
+.main-nav a:hover::after {
+   transform-origin: bottom left;
+}
+
+/* Hero Section */
 .container-hero {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-right: 700px    ;
 }
 
 .hero-flex {
@@ -47,6 +84,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-left: 140px;
 }
 
 .hero-header {
@@ -55,6 +93,7 @@ body {
     color: #F9FAF8;
     line-height: 50px;
     width: 500px;
+    padding-bottom: 15px;
 }
 
 .hero-subtext {
@@ -65,23 +104,31 @@ body {
 
 .hero-button {   
     display: flex;
-    padding-top: 10px;
+    padding-top: 20px;
 }
 
-.hero-sign-up {
+.hero-book-now {
     color: white;
+    font-size: 16px;
     font-weight: bold;
-    background-color: #3882F6;
+    background-color: #D90429;
     border-radius: 5px;
-    padding: 6px 30px;
+    padding: 8px 30px;
+    border-style: none;
 }
 
 .hero-image {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
+    width: 45vw;
 }
 
+.img-hero {
+    width: 500px;
+    height: 300px;
+}
+
+/* Our Services Section */
 .container-info {
     display: flex;
     justify-content: center;
@@ -92,10 +139,28 @@ body {
 .container-info img {
     width: 100px;
     height: 100px;
-    border: solid blue 2px;
+    border: solid #D90429 3px;
     border-radius: 5px;  
 }
 
+.info {
+    max-width: 150px;
+}
+
+.text {
+    padding-top: 10px;
+    font-weight: bold;
+}
+
+.title {
+    margin-top: 32px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 900;
+}
+
+/* Quote Section */
 .container-quote {
     display: flex;
     align-items: center;
@@ -108,27 +173,17 @@ body {
     padding: 100px;
 }
 
-.info {
-    max-width: 200px;
-}
+/* Booking Section */
 
-.title {
-    margin-top: 32px;
-    margin-bottom: 32px;
-    text-align: center;
-    font-size: 36px;
-    font-weight: 900;
-}
-
-.container-subscription {
+.container-booking {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.subscription-box {
+.booking-box {
     display: flex;
-    background-color: #3882F6;
+    background-color: #D90429;
     padding: 35px;
     margin-top: 50px;
     margin-bottom: 50px;
@@ -138,67 +193,49 @@ body {
     justify-content: space-evenly;
 }
 
-.subscription-text {
+.booking-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
     line-height: 20px;
 }
 
-.subscription-header {
+.booking-header {
     font-size: 20px;
     font-weight: bold;
 }
 
-.subscription-subtext {
+.booking-subtext {
     margin-top: 3px;
 }
 
-.sign-up-container {
+.book-now-container {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.sign-up-subscription {
+.book-now-booking {
     color: white;
     font-weight: bold;
-    background-color: #3882F6;
-    border: solid white 1px;
+    font-size: 15px;
+    background-color: #D90429;
+    border: solid white 2px;
     border-radius: 5px;
-    padding: 6px 30px;
+    padding: 10px 30px;
 }
 
-.main-nav a {
-    display: inline-block;
-    padding: .5em 1.5em;
-}
-
-.header h2 {
-    color: #F9FAF8;
-    font-size: 48px;
-    font-weight: bolder; 
-}
-
-.header a {
-    font-size: 18px;
-    color: #E5E7EB;
-    text-decoration: none;
-}
-
-.header button {
-    background-color: #3882F6;
-    color: white;
-}
+/* Footer */
 
 footer {
     bottom: 0;
     left: 0;
     right: 0;
-    height: 52px;
+    height: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #1F2937;
+    background-color: #4D020E;
     color: white;
+    font-weight: bold;
 }
